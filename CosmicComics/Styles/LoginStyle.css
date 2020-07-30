@@ -1,0 +1,113 @@
+﻿/* reset styles */
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* body and page container */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Images/comic-book-background-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 750px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+/* header section */
+header {
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+/* main content */
+article {
+    padding: 15px;
+}
+
+    article h2 {
+        margin: 5px 5px 15px;
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    article p {
+        margin: 5px;
+        padding: 10px;
+    }
+
+/* label section */
+.label {
+    width: 85px;
+    float: left;
+    display: inline;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.textbox {
+    display: inline;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 350px;
+    height: 20px;
+    padding: 5px;
+    font-size: medium;
+}
+
+.button {
+    display: inline;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    height: 45px;
+    font-size: medium;
+}
+
+    .button:hover {
+        background-color: #00ff21;
+    }
+
+/* hyperlink section */
+p .hplClass {
+    padding-left: 10px;
+    margin-top: 20px;
+    color: blue;
+    text-decoration: none;
+    position: relative;
+    float: left;
+}
+
+/* footer section */
+footer {
+    padding: 15px;
+    clear: both;
+    color: white;
+    background-color: black;
+}
+
+    footer p {
+        text-align: center;
+        font-weight: bold;
+        height: 30px;
+    }

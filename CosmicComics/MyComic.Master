@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyComic.master.cs" Inherits="CosmicComics.MyComic" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Styles/MasterMain.css" rel="stylesheet" />
+    <link href="Styles/GridView.css" rel="stylesheet" />
+    <link href="Styles/SlideShow.css" rel="stylesheet" />
+    <link href="Styles/Add-Edit-Style.css" rel="stylesheet" />
+    <script src="JavaScripts/SlideShow.js"></script>
+    <link href="Images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <header>
+                <div>
+                    <a href="Home.aspx"><img src="Images/cosmic_comics.png" width="200" height="80" alt="" /></a>
+                    <ul class="menuNavigation">
+                        <li><a href="Home.aspx"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                        <li><a href="Add.aspx"><i class="fa fa-fw fa-plus"></i>Add</a></li>
+                        <li><a href="Edit.aspx"><i class="fa fa-fw fa-edit"></i>Edit</a></li>
+                        <li><a href="Help.aspx"><i class="fa fa-fw fa-envelope"></i>Help</a></li>
+                        <li><input type="text" placeholder="Search..." /></li>
+                    </ul>
+                    <ul class="menuNavigation-right">
+                        <li><a href="#"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a></li>
+                        <li>
+                            <asp:LinkButton ID="lbtnLogin" runat="server" OnClick="lbtnLogin_Click"><i class="fa fa-fw fa-user"></i>Login</asp:LinkButton>
+                        </li>
+                        <li style="width: 200px">
+                            <asp:Label ID="lblCurrentUser" runat="server" Text=""></asp:Label>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="siteNavigation">
+                <ul>
+                    <li><a href="Recommended.aspx"><i class="fa fa-fw fa-line-chart"></i>Recommended</a></li>
+                    <li><a href="NewRelease.aspx"><i class="fa fa-fw fa-book"></i>New Releases</a></li>
+                    <li><a href="RecentlyRead.aspx"><i class="fa fa-fw fa-archive"></i>Recently Read</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <article>
+                <asp:ContentPlaceHolder ID="contentBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </article>
+            <div class="clear"></div>
+            <footer>
+                <p>© Copyright 2019 Cosmic Comics. All rights reserved.</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

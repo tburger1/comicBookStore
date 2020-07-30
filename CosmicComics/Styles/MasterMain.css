@@ -1,0 +1,200 @@
+﻿/* reset styles */
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* body and page container */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+.contactContainer1 {
+    width: 55%;
+    float: left;
+}
+
+.contactContainer2 {
+    width: 45%;
+    float: left;
+}
+
+/* header section */
+header {
+    padding: 15px 50px 95px 50px;
+    background-color: black;
+    color: white;
+}
+
+    header div img {
+        float: left;
+        position: relative;
+        padding-right: 50px;
+    }
+
+/* menu navigation (first menu bar) */
+ul.menuNavigation, ul.menuNavigation-right {
+    list-style-type: none;
+}
+
+    ul.menuNavigation li {
+        width: 100px;
+        height: 75px;
+        text-align: center;
+        line-height: 75px;
+        float: left;
+        position: relative;
+    }
+
+    ul.menuNavigation-right li {
+        width: 100px;
+        height: 75px;
+        text-align: center;
+        line-height: 75px;
+        float: right;
+        position: relative;
+    }
+
+        ul.menuNavigation li a, ul.menuNavigation-right li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+            ul.menuNavigation li a:hover, ul.menuNavigation-right li a:hover {
+                background-color: #00ff21;
+                color: black;
+                border: solid 1px #00ff21;
+            }
+
+            ul.menuNavigation input[type=text] {
+                float: left;
+                position: relative;
+                width: 500px;
+                height: 30px;
+                line-height: 30px;
+                margin-top: 20px;
+                margin-left: 25px;
+                padding: 5px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+            }
+
+/* site navigation (second menu bar) */
+div.siteNavigation {
+    background-color: #00ff21;
+}
+
+    div.siteNavigation ul {
+        list-style-type: none;
+        padding: 0px 50px;
+    }
+
+        div.siteNavigation ul li {
+            width: 150px;
+            height: 75px;
+            text-align: center;
+            line-height: 75px;
+            position: relative;
+            display: inline-block;
+        }
+
+            div.siteNavigation ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+                div.siteNavigation ul li a:hover {
+                    color: white;
+                }
+
+/* clear section */
+.clear {
+    clear: both;
+}
+
+/* article */
+article {
+    padding: 15px 50px;
+    font-size: 1.1em;
+}
+
+    article h2 {
+        font-size: 1.6em;
+        text-align: center;
+        /*margin-top: 25px;*/
+        padding: 15px;
+    }
+
+    article h3 {
+        font-size: 1.2em;
+        text-align: left;
+        padding-top: 25px;
+        margin-left: 14%;
+    }
+
+    article p {
+        margin-left: 16%;
+        padding: 10px;
+    }
+
+    p .contactLabel1 {
+        display: inline;
+        float: left;
+        width: 150px;
+        padding: 5px;
+    }
+
+    p .contactText {
+        display: inline;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 250px;
+        height: 20px;
+        padding: 5px;
+        font-size: medium;
+    }
+
+    p .contactButton {
+        display: inline;
+        position: absolute;
+        float: left;
+        padding: 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100px;
+        height: 45px;
+        font-size: medium;
+    }
+
+        p .contactButton:hover {
+            background-color: #00ff21;
+        }
+
+/* footer section */
+footer {
+    padding: 15px 0px;
+    clear: both;
+    color: white;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+    footer p {
+        text-align: center;
+        font-weight: bold;
+        line-height: 30px;
+    }
